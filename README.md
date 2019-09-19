@@ -1,8 +1,8 @@
-## SPFx Accordiom Collapsible Section web part
+## SPFx Collapsible Accordion Section web part
 
--Adds a collapsible accordion to a page
--Allows user to select a list within their site from a property panel dropdown to populate the accordion structure (list must have a Title column and Content column)
--Can be deployed in a Teams tab in addition to Office 365 SharePoint site
+* Adds a collapsible accordion to a page.
+* Allows user to select a list within their site from a property panel dropdown to populate the accordion structure (list must have a Title column and Content column).
+* Can be deployed in a Teams tab in addition to Office 365 SharePoint site.
 
 ## SharePoint Framework Version 
 1.8.2
@@ -16,7 +16,7 @@
 
 Solution|Author(s)
 --------|---------
-react-accordion|Erik Benke
+SPFx Collapsible Accordion Section|Erik Benke
 
 
 ## Version history
