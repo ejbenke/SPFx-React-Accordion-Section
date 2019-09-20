@@ -4,6 +4,22 @@
 * Allows user to select a list within their site from a property panel dropdown to populate the accordion structure (list must have a Title column and Content column).
 * Can be deployed in a Teams tab in addition to Office 365 SharePoint site. See current [Microsoft documentation](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-web-part-as-ms-teams-tab) on how to deploy to Teams.
 
+## Usage
+
+**1) Create or use a list with a Title and a Content column:**
+* The value in the Title column for each item will appear in the heading bars of the Accordion.  
+* The value in the Content column for each item will appear in the collapsible content section of the Accordion    
+
+
+
+![Create list for use with the Accordion](./assets/ListForAccordion.png)
+
+**2) Add the Accordion Section web part to your page & select your list:**  
+
+
+
+![Select list from property panel for use with the Accordion](./assets/AccordionSettings.png)
+
 ## SharePoint Framework Version 
 1.8.2
 
