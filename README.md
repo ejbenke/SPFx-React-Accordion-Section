@@ -4,6 +4,8 @@
 * Allows user to select a list within their site from a property panel dropdown to populate the accordion structure (list must have a Title column and Content column).
 * Can be deployed in a Teams tab in addition to Office 365 SharePoint site. See current [Microsoft documentation](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-web-part-as-ms-teams-tab) on how to deploy to Teams.
 
+Note February 24, 2020: Currently there are issues rendering in IE 11 (thank you dbro1 for the feedback!).  So, for now avoid using with IE 11 but I'm actively working on updating code with the necessary polyfills and hope to update the project within a matter of days.
+
 ## Usage
 
 **1) Create or use a list with a Title and a Content column:**
