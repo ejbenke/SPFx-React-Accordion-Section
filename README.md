@@ -1,4 +1,4 @@
-## SPFx Collapsible Accordion Section web part
+## SPFx Accordion Section FAQ Builder web part
 
 * Adds a collapsible accordion section to an Office 365 SharePoint page or Teams Tab.
 * Ideal for creating FAQs.
