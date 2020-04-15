@@ -9,6 +9,9 @@ import {
   IPropertyPaneDropdownOption
 } from '@microsoft/sp-property-pane';
 import { sp } from "@pnp/sp";
+import 'core-js/es6/array';
+import 'es6-map/implement';
+import 'core-js/modules/es6.array.find';
 import { PropertyFieldListPicker, PropertyFieldListPickerOrderBy } from '@pnp/spfx-property-controls/lib/PropertyFieldListPicker';
 
 import * as strings from 'ReactAccordionWebPartStrings';
