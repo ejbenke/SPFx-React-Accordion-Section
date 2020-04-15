@@ -1,10 +1,10 @@
 ## SPFx Collapsible Accordion Section web part
 
-* Adds a collapsible accordion to a page.
-* Allows user to select a list within their site from a property panel dropdown to populate the accordion structure (list must have a Title column and Content column).
-* Can be deployed in a Teams tab in addition to Office 365 SharePoint site. See current [Microsoft documentation](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-web-part-as-ms-teams-tab) on how to deploy to Teams.
-
-Note February 24, 2020: Currently there are issues rendering in IE 11 (thank you dbro1 for the feedback!).  So, for now avoid using with IE 11 but I'm actively working on updating code with the necessary polyfills and hope to update the project within a matter of days.
+* Adds a collapsible accordion section to an Office 365 SharePoint page or Teams Tab.
+* Ideal for creating FAQs.
+* When adding the web part, you'll be prompted to select a list from a property panel dropdown (target list must have a Title column and Content column).  This will generate an accordion with one section for each item in the list.
+* Modifications/deletions/additions to the list items in the target list of an added web part are automatically reflected on the page.
+* To deploy to a Teams tab see current [Microsoft documentation](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-web-part-as-ms-teams-tab).
 
 ## Usage
 
@@ -43,6 +43,7 @@ Version|Date|Comments
 -------|----|--------
 1.0|August 14, 2019|Initial release
 1.1|September 19, 2019|Minor updates, adding to Github
+1.2|April 15, 2020|Added Polyfills for IE11 compatibility
 
 
 ### Building the code
