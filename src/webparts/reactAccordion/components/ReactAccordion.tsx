@@ -74,7 +74,7 @@ export default class ReactAccordion extends React.Component<IReactAccordionProps
                     </AccordionItemButton>
                   </AccordionItemHeading>
                     <AccordionItemPanel>
-                      <p>{item.Content}</p>
+                      <p  dangerouslySetInnerHTML={{__html: item.Content}} />
                     </AccordionItemPanel>
                 </AccordionItem>
                 );
