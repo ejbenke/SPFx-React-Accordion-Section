@@ -10,7 +10,8 @@
 
 **1) Create or use a list with a Title and a Content column:**
 * The value in the Title column for each item will appear in the heading bars of the Accordion.  
-* The value in the Content column for each item will appear in the collapsible content section of the Accordion    
+* The value in the Content column for each item will appear in the collapsible content section of the Accordion
+* When creating the columns, select "Multiple lines of text" and leave as the default of plain text.  Rich text not currently supported but is my top priority as an enhancement.
 
 
 
