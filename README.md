@@ -11,7 +11,7 @@
 **1) Create or use a list with a Title and a Content column:**
 * The value in the Title column for each item will appear in the heading bars of the Accordion.  
 * The value in the Content column for each item will appear in the collapsible content section of the Accordion
-* When creating the columns, select "Multiple lines of text" and leave as the default of plain text.  Rich text not currently supported but is my top priority as an enhancement.
+* When creating the columns, select "Multiple lines of text".  Rich text is now supported within the Content column.
 
 
 
@@ -45,6 +45,7 @@ Version|Date|Comments
 1.0|August 14, 2019|Initial release
 1.1|September 19, 2019|Minor updates, adding to Github
 1.2|April 15, 2020|Added Polyfills for IE11 compatibility
+1.3|July 10, 2020|Adding Rich Text support for Content panels
 
 
 ### Building the code
