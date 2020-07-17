@@ -55,7 +55,7 @@ Version|Date|Comments
   - `npm install` to install the npm dependencies
 - To test:
   - `gulp serve --nobrowser`
-  -  Test within a site in your tenant using the Remote Workbench by navigating to *https://\{yourtenant\}.sharepoint.com/sites/\{yoursite\}/_layouts/15/workbench.aspx*.  Use local lists within your site that follow the **Usage** guidelines above.  Local workbench testing not supported
+  -  Test within a site in your tenant using the Remote Workbench by navigating to *https://\{yourtenant\}.sharepoint.com/sites/\{yoursite\}/_layouts/15/workbench.aspx*.  Use Lists within your site that follow the **Usage** guidelines above.  Local workbench testing not supported
 - To package and deploy:
   - Use `gulp bundle --ship` & `gulp package-solution --ship`
   - Add the .sppkg to your SharePoint App Catalog
