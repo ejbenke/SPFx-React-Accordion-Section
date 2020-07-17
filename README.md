@@ -48,12 +48,14 @@ Version|Date|Comments
 1.3|July 10, 2020|Adding Rich Text support for Content panels
 
 
-### Building the code
+### Testing and Deployment
 
 - Clone or download this repository
 - Run in command line:
   - `npm install` to install the npm dependencies
-  - `gulp serve` to display in Developer Workbench (recommend using your tenant workbench so you can test with real lists within your site)
+- To test:
+  - `gulp serve --nobrowser`
+  -  Test within a site in your tenant using the Remote Workbench by navigating to *https://\{yourtenant\}.sharepoint.com/sites/\{yoursite\}/_layouts/15/workbench.aspx*.  Use local lists within your site that follow the **Usage** guidelines above.  Local workbench testing not supported
 - To package and deploy:
   - Use `gulp bundle --ship` & `gulp package-solution --ship`
   - Add the .sppkg to your SharePoint App Catalog
