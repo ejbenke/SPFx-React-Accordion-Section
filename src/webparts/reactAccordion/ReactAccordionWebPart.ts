@@ -22,6 +22,8 @@ import { string } from 'prop-types';
 export interface IReactAccordionWebPartProps {
   listId: string;
   accordionTitle: string;
+  titleField: string;
+  valueField: string;
 }
 
 export default class ReactAccordionWebPart extends BaseClientSideWebPart<IReactAccordionWebPartProps> {
@@ -40,6 +42,8 @@ export default class ReactAccordionWebPart extends BaseClientSideWebPart<IReactA
       {
         listId: this.properties.listId,
         accordionTitle: this.properties.accordionTitle,
+        titleField: this.properties.titleField,
+        valueField: this.properties.valueField,
         onConfigure: () => {
           this.context.propertyPane.open();
         }
@@ -83,7 +87,13 @@ export default class ReactAccordionWebPart extends BaseClientSideWebPart<IReactA
                   onGetErrorMessage: null,
                   deferredValidationTime: 0,
                   key: 'listPickerFieldId'
-                })
+                }),
+                PropertyPaneTextField('titleField', {
+                  label: 'Column name for Title',
+                }),,
+                PropertyPaneTextField('valueField', {
+                  label: 'Column name for Value',
+                }),
               ]
             }
           ]

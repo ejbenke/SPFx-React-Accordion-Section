@@ -12,6 +12,7 @@ import {
   AccordionItemButton,
   AccordionItemPanel,
 } from 'react-accessible-accordion';
+import { isEmpty } from '@microsoft/sp-lodash-subset';
 
 export interface IReactAccordionState {
   items: Array<any>;
@@ -30,7 +31,7 @@ export default class ReactAccordion extends React.Component<IReactAccordionProps
 
   private getListItems(): void {
     if(typeof this.props.listId !== "undefined" && this.props.listId.length > 0) {
-      sp.web.lists.getById(this.props.listId).items.select("Title","Content").get()
+      sp.web.lists.getById(this.props.listId).items.select(!isEmpty(this.props.titleField) ? this.props.titleField : "Title",!isEmpty(this.props.valueField) ? this.props.valueField : "Content").get()
         .then((results: Array<any>) => {
           this.setState({
             items: results
@@ -44,7 +45,7 @@ export default class ReactAccordion extends React.Component<IReactAccordionProps
   }
 
   public componentDidUpdate(prevProps:IReactAccordionProps): void {
-    if(prevProps.listId !== this.props.listId) {
+    if(prevProps.listId !== this.props.listId || prevProps.titleField !== this.props.titleField || prevProps.valueField !== this.props.valueField) {
       this.getListItems();
     }
   }
@@ -70,11 +71,11 @@ export default class ReactAccordion extends React.Component<IReactAccordionProps
                 <AccordionItem>
                   <AccordionItemHeading>
                     <AccordionItemButton>
-                      {item.Title}
+                      {!isEmpty(this.props.titleField) ? item[this.props.titleField] : item.Title}
                     </AccordionItemButton>
                   </AccordionItemHeading>
                     <AccordionItemPanel>
-                      <p  dangerouslySetInnerHTML={{__html: item.Content}} />
+                      <p  dangerouslySetInnerHTML={{__html: !isEmpty(this.props.valueField) ? item[this.props.valueField] : item.Content}} />
                     </AccordionItemPanel>
                 </AccordionItem>
                 );

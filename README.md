@@ -8,7 +8,7 @@
 
 ## Usage
 
-**1) Create or use a list with a Title and a Content column:**
+**1a) Create or use a list with a Title and a Content column:**
 * The value in the Title column for each item will appear in the heading bars of the Accordion.  
 * The value in the Content column for each item will appear in the collapsible content section of the Accordion
 * When creating the columns, select "Multiple lines of text".  Rich text is now supported within the Content column.
@@ -16,6 +16,11 @@
 
 
 ![Create list for use with the Accordion](./assets/ListForAccordion.png)
+
+**1b) Use an existing list with Text columns:**
+* The value in the titlefield column for each item will appear in the heading bars of the Accordion.  
+* The value in the valuefield column for each item will appear in the collapsible content section of the Accordion
+
 
 **2) Add the Accordion Section web part to your page & select your list:**  
 
@@ -46,6 +51,7 @@ Version|Date|Comments
 1.1|September 19, 2019|Minor updates, adding to Github
 1.2|April 15, 2020|Added Polyfills for IE11 compatibility
 1.3|July 10, 2020|Adding Rich Text support for Content panels
+1.4|Februari 10, 2022|Adding option to use existing list and select columns for title and value
 
 
 ### Testing and Deployment
